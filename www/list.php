@@ -59,8 +59,7 @@
 		},
 		function(data, status)
 		{
-			alert("SUCCESS3");
-			var arrPosts = JSON.parse(data);
+			var arrPosts = json_decode(data);
 			displayPosts(arrPosts);
 		});
 	}
