@@ -70,6 +70,7 @@
     		</div>
     		<!-- End Timeline -->
 </div>
-Seen Dr. Evil? <a href="">Click here to report your sighting</a>
+Seen Dr. Evil? <a href="localhost/report.php">Click here to report your sighting</a>
+
 </body>
 </html>
