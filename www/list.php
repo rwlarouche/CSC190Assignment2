@@ -59,11 +59,11 @@
 		},
 		function(data, status)
 		{
-			var arrPosts = json_decode(data);
+			var arrPosts = JSON.parse(data);
 			displayPosts(arrPosts);
 		});
 	}
 
 	// Periodically update page with new reports (if any)
-	setInterval(retrievePosts,1000);
+	setInterval(retrievePosts,10000);
 </script>
