@@ -69,8 +69,7 @@
     			
     		</div>
     		<!-- End Timeline -->
-    	</div>
-    </div>
 </div>
+Seen Dr. Evil? <a href="">Click here to report your sighting</a>
 </body>
 </html>
