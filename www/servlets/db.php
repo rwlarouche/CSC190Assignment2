@@ -8,7 +8,7 @@
 		if (!$link) {
 		    throw new Exception("error: ".mysql_error());
 		}
-		mysql_select_db("db_users", $link);
+		mysql_select_db("db_reports", $link);
 		//2. do it
 		$res = mysql_query($q, $link);
 		if(!$res){
@@ -31,12 +31,11 @@
 		return mysql_real_escape_string($txt, $link);
 	}
 //TEST CASES
-if(1==2){
+if(1==1){
 /*
-	executeSQL("INSERT INTO tbl_users(uname, pwd_hash, real_name) VALUES ('xfu', 'abc', 'evil')");
-	$arr = executeSQL("SELECT * FROM tbl_users");
+	executeSQL("INSERT INTO tbl_reports(nname, msg) VALUES ('ryan', 'I saw Dr. Evil by Adams!')");
+	$arr = executeSQL("SELECT * FROM tbl_reports");
 	print_r($arr);	
 */
-	print(secure("abc'abc"));
 }
 ?>
