@@ -101,7 +101,7 @@ p {
   </form>
 </div>
 <p id="response"></p>
-<a href="">Click here to see a list of Dr. Evil sightings</a>
+<a href="localhost/list.php">Click here to see a list of Dr. Evil sightings</a>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
