@@ -59,7 +59,7 @@
 		},
 		function(data, status)
 		{
-			var arrPosts = JSON.parse(data);
+			var arrPosts = json_decode(data);
 			displayPosts(arrPosts);
 		});
 	}
