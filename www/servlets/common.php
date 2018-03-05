@@ -3,7 +3,7 @@
 	//common utility
 	function insertPost($nname, $msg){
 		$nname = secure($nname);
-		$msg = secure(checksum($msg));
+		$msg = secure($msg);
 		$q = "INSERT INTO tbl_reports(nname, msg) VALUES ('$uname', '$msg')";
 		executeSQL($q);
 	}	
