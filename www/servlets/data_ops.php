@@ -1,11 +1,14 @@
 <?php
 	include_once("common.php");
+			
+//	$op = $_POST["op"];
 	
-	$op = $_POST["op"];
+	$op = "getPosts";
+
 	if ($op == "getPosts")
 	{
 		$arr = getPosts();
-		$s = JSON.encode($arr);
+		$s = json_encode($arr);
 		print($s);
 	}	
 ?>

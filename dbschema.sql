@@ -6,3 +6,5 @@ CREATE TABLE tbl_reports(
 	msg varchar(1024),
 	ts timestamp
 );
+
+INSERT INTO tbl_reports(nname, msg) VALUES('ryan', 'test message');
