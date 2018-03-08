@@ -101,11 +101,12 @@ p {
   </form>
 </div>
 <p id="response"></p>
-<a href="localhost/list.php">Click here to see a list of Dr. Evil sightings</a>
+<a href="list.php">Click here to see a list of Dr. Evil sightings</a>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 function logReport() {
