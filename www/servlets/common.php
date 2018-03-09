@@ -4,7 +4,7 @@
 	function insertPost($nname, $msg){
 		$nname = secure($nname);
 		$msg = secure(checksum($msg));
-		$q = "INSERT INTO tbl_reports(nname, msg) VALUES ('$uname', '$msg')";
+		$q = "INSERT INTO tbl_reports(nname, msg) VALUES ('$nname', '$msg')";
 		executeSQL($q);
 	}	
 	function getPosts(){
