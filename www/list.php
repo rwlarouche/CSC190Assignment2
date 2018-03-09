@@ -72,6 +72,6 @@
     	</div>
     </div>
 </div>
-See Dr. Evil? <a href="localhost/list.php">Post a sighting here</a>
+Have you seen Dr. Evil's team? <a href="report.php">Post a sighting here</a>
 </body>
 </html>
