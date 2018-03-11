@@ -139,10 +139,6 @@ function logReport() {
 	{
 		alert("ERROR: Name needed for report." );
 	}
-	if(nname!="" && loc=="")
-	{
-		alert("ERROR: Location needed for report.");
-	}
 } // logReport
 </script>
 </html>
