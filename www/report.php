@@ -131,6 +131,18 @@ function logReport() {
 			}
 		});
 	}
+	if(nname=="" && loc=="")
+	{
+		alert("ERROR: Cannot submit empty report.");
+	}
+	if(nname=="" && loc!="")
+	{
+		alert("ERROR: Name needed for report." );
+	}
+	if(nname!="" && loc=="")
+	{
+		alert("ERROR: Location needed for report.");
+	}
 } // logReport
 </script>
 </html>
