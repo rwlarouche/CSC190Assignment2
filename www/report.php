@@ -137,7 +137,7 @@ function logReport() {
 	}
 	if(nname=="" && loc!="")
 	{
-		alert("ERROR: Name needed for report." );
+		alert("ERROR: Name needed for report.");
 	}
 } // logReport
 </script>
