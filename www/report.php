@@ -117,7 +117,7 @@ function logReport() {
 	//Check if either field is empty and post alert, or proceed otherwise.
 	if(nname=="" || loc=="")
 	{
-		alert("ERROR: You need both a name AND a location to post here!");	
+		alert("Sorry, but you must provide both a name AND a location to post here!");	
 	}
 	else
 	{
@@ -129,9 +129,10 @@ function logReport() {
 		},
 		function(data, status){
 			if(data=="success"){
-				alert("SUCCESS: Report submitted! Thank you!");
+				alert("Report submitted! Thank you!");
 			}else{
-				alert("ERROR: Unable to process report! Please try again!");
+				alert("Unable to process report due to server error! Please try again later!");
+			//file_put_contents("submiterror.log", "\n" . date(DATE_RFC2822) . "\ndata: " . $data . "\nstatus" . $status, FILE_APPEND | LOCK_EX);
 			}
 		});
 	}
