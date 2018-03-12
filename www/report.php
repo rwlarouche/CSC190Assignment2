@@ -119,6 +119,9 @@ function logReport() {
 	{
 		alert("Sorry, but you must provide both a name AND a location to post here!");	
 	}
+	else if (loc=="I don't know"){
+		alert("If you don't know, then why are you trying to post here?");
+	}
 	else
 	{
 		$.post("servlets/data_ops.php",
@@ -132,7 +135,12 @@ function logReport() {
 				alert("Report submitted! Thank you!");
 			}else{
 				alert("Unable to process report due to server error! Please try again later!");
-			//file_put_contents("submiterror.log", "\n" . date(DATE_RFC2822) . "\ndata: " . $data . "\nstatus" . $status, FILE_APPEND | LOCK_EX);
+			//$printstr = date(DATE_RFC2822); //. "\ndata: {data}\nstatus: {status}"
+			//$printstr .= "\ndata: ";
+			//$printstr .= data;
+			//$printstr .= "\nstatus: "
+			//$printstr .= $status
+			//file_put_contents("submiterror.log", $printstr ,  FILE_APPEND | LOCK_EX);
 			}
 		});
 	}
