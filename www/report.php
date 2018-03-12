@@ -114,8 +114,12 @@ function logReport() {
 	var nname=this.nname.value;
 	var loc = this.loc.value;	
 
-	// If nickname and location fields are not empty
-	if(nname!="" && loc!="")
+	//Check if either field is empty and post alert, or proceed otherwise.
+	if(nname=="" || loc=="")
+	{
+		alert("ERROR: You need both a name AND a location to post here!");	
+	}
+	else
 	{
 		$.post("servlets/data_ops.php",
 		{
@@ -131,14 +135,7 @@ function logReport() {
 			}
 		});
 	}
-	if(nname=="" && loc=="")
-	{
-		alert("ERROR: Cannot submit empty report.");
-	}
-	if(nname=="" && loc!="")
-	{
-		alert("ERROR: Name needed for report.");
-	}
+	
 } // logReport
 </script>
 </html>
